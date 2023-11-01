@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script></script>
+    <title>Lập biên bản kiểm kê</title>
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <div class="nav-container">
+          <ul class="nav collapse" id="myNav">
+              <li><a href="#">Lập phiếu kiểm kê</a></li>
+              <li><a href="#">Lập biên bản kiểm kê </a></li>
+              <li><a href="#">Xem lịch sử kiểm kê</a></li>
+              <li><a href="#">Xem biên bản kiểm kê</a></li>
+              <li><a href="#">Xem thông tin kho</a></li>
+          </ul>
+      </div>  
+      <div class="logo">
+          <a href="TrangChukk.html"><img src="../image/logo.png" class="logo-img"></a>
+      </div>
+      <div class="icon">
+          <div class="user-icon ">
+              <a href=""><i class="fa-solid fa-user" ></i></a>
+          </div>
+      </div>
+      <div class="search">
+          <form action="">
+            <input type="text" placeholder="Tìm kiếm..." name="search" class="search-btn">
+            <i class="fa fa-search"></i>
+          </form>
+      </div>
+    </header>
+
+    <main
+      style="background-color: antiquewhite; margin-top: 110px; height: auto"
+      class="container"
+    >
+      <h2 class="title">LẬP BIÊN BẢN KIỂM KÊ</h2>
+      <div class="body">
+        <h4 class="codeForm">Mã phiếu:XXX</h4>
+        <div class="input-container">
+          <label class="labelmakho" for="">Mã Kho</label>
+          <input class="input" value="KNVL01" disabled/>
+           <!-- <select class="input">
+                <option value=""></option>Giá trị rỗng
+                <option>KNVL01</option>
+                <option>KNVL02</option>
+                <option>KNVL03</option>
+                <option>KNVL04</option>
+                <option>KNVL05</option>
+                <option>KNVL06</option>
+                <option>KTP07</option>
+                <option>KTP08</option>
+                <option>KTP09</option>
+                <option>KTP10</option>
+            </select>-->
+        </div>
+        <div class="input-container">
+          <label class="labelInput" for="">Tên Nhân Viên</label>
+          <input class="input" value="Phương Duyên" disabled/>
+        </div>
+        <div class="input-container">
+          <label class="labelInput" for="">Ngày kiểm kê</label>
+          <input class="input" value="24/10/2023" disabled/>
+        </div>
+        <div class="danhsach">
+          <b>Danh sách hàng hóa</b>
+        </div>
+        <div class="table">
+          <table class="custom-table">
+            <tr>
+              <th class="custom-cell">Mã kệ</th>
+              <th class="custom-cell">Mã lô</th>
+              <th class="custom-cell">Tên hàng hóa</th>
+              <th class="custom-cell">Đơn vị Tính</th>
+              <th class="custom-cell">Số lượng thực tế</th>
+              <th class="custom-cell">Số lượng hệ thống</th>
+              <th class="custom-cell">NSX</th>
+              <th class="custom-cell">NHH</th>
+              <th class="custom-cell">Mô tả chi tiết</th>
+            </tr>
+            <tr>
+              <td class="custom-cell">KNVL011</td>
+              <td class="custom-cell">1</td>
+              <td class="custom-cell">Đường</td>
+              <td class="custom-cell">kg</td>
+              <td class="custom-cell">10</td>
+              <td class="custom-cell">8</td>
+              
+              <td class="custom-cell">2023-10-14</td>
+              <td class="custom-cell">2023-12-14</td>
+              <td class="custom-cell"> <input> </td>
+            </tr>
+            <tr>
+              <td class="custom-cell">KNVL012</td>
+              <td class="custom-cell">2</td>
+              <td class="custom-cell">Kẹo bốn mùa</td>
+              <td class="custom-cell">bịch</td>
+              <td class="custom-cell">4</td>
+              <td class="custom-cell">3</td>
+
+              <td class="custom-cell">2023-10-14</td>
+              <td class="custom-cell">2023-12-14</td>
+              <td class="custom-cell"> <input> </td>
+            </tr>
+            <tr>
+              <td class="custom-cell">KNVL013</td>
+              <td class="custom-cell">3</td>
+              <td class="custom-cell">Bánh AFC</td>
+              <td class="custom-cell">hộp</td>
+              <td class="custom-cell">20</td>
+              <td class="custom-cell">16</td>
+
+              <td class="custom-cell">2023-10-14</td>
+              <td class="custom-cell">2023-12-14</td>
+              <td class="custom-cell"> <input> </td>
+            </tr>
+          </table>
+        </div>
+        <div class="btn">
+            <form>
+                <button class="buttonCancel">Hủy</button>
+                <button class="buttonCreate">Lập biên bản</button>
+              </form>
+        </div>
+      </div>
+      
+    </main>
+    <footer id="footer">
+      <div class="policy">
+        <h5 class="policy-title">CHÍNH SÁCH</h5>
+        <div class="policy-information">
+          <a href="">Chính sách bảo mật</a><br />
+          <a href="">Chính sách vận chuyển</a><br />
+          <a href="">Chính sách bảo hành</a><br />
+          <a href="">Điều khoản chung</a>
+        </div>
+      </div>
+      <div class="contact">
+        <h5 class="policy-title">VỀ CHÚNG TÔI</h5>
+        <div class="policy-information">
+          <a href="">Câu chuyện thương hiệu</a><br />
+          <a href="">Tầm nhìn và giá trị cốt lõi</a><br />
+          <a href="">Lịch sửa phát triển</a><br />
+          <a href="">Mạng lưới và quy mô</a>
+        </div>
+      </div>
+      <div class="CustomerCare">
+        <h5 class="CustomerCare-title">THÔNG TIN LIÊN HỆ</h5>
+        <div class="contact-information">
+          <p>CÔNG TY TNHH ONETOFIVE</p>
+          <p>Onetofive.vn</p>
+          <p>Địa chỉ:Nguyễn văn Bảo, Phường 4, Gò Vấp</p>
+          <p>Hotline:033xxxxxxx</p>
+        </div>
+        <h5 class="Community-title">CỘNG ĐỒNG</h5>
+        <a href="" class="Community-icon"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="" class="Community-icon"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+        <a href="" class="Community-icon"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="" class="Community-icon"
+          ><i class="fa-brands fa-tiktok"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
